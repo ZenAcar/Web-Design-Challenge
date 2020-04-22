@@ -1,0 +1,36 @@
+h4 {
+    color: rgb(37, 189, 37);
+}
+
+h5 {
+    color: rgb(37, 189, 37);
+    font-size: 60px;
+}
+
+h2 {
+    color: rgb(37, 189, 37);
+    font-size: 60px;
+}
+
+.title {
+    color: rgb(37, 189, 37);
+}
+
+footer {
+    background-color:rgb(241, 190, 95);
+    color: rgb(88, 87, 87);
+    text-align: center;
+}
+
+.bottom{
+    text-align: center;
+}
+
+.table {
+    background-color: rgb(185, 230, 248);
+}
+
+.card-title {
+    font-size: 20px;
+}
+

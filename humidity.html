@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Visualization Dashboard</title>
+    <!--CSS Link-->   
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(241, 190, 95)">
+        <a class="navbar-brand" href="index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="max_temp.html">Maximum Temperature</a>
+                        <a class="dropdown-item" href="humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="jumbotron">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-12">
+                    <!-- Image Box -->
+                   <div class="box">
+                        <div class="container">
+                            <img src="Resources/assets/images/Lat_Humid.png" class="visualization rounded float-right" alt="Latitude vs Humidity Graph" style="width:100%;">
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-lg-8 col-md-12">
+                    <!-- Paragraph Box  -->
+                    <div class="box" style="margin-left: 60px;margin-right: 40px;">
+                        <h2 class="title">Humidity </h2>
+                        <p>The analysis doesn't show strong correlation to latitude. 
+                            Therefore, we cannot conclude that there is a conclusive pattern between humidity and latitude.</p>
+                        <p>On the other hand, between latitude 60 and 80, the humidity is concentrated at 80% or above. 
+                            Also we could say that majority of the cities have above 60% humidity.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+   
+    </div>
+
+    <!-- Cards -->
+    <h4 class="title text-center">Visualizations</h4>
+    <div class="container-fluid" style="padding: 30px;">
+        <div class="row">
+            <div class="card-deck">
+                <div class="col-lg col-md-6">
+                    <div class="card bg-light mb-3" style="max-width: 20rem;">
+                        <a href="max_temp.html">
+                            <img class="card-img-top" src="Resources/assets/images/Lat_Temp.png" alt="Max Temp Graph"
+                                style="width:100%">
+                            <div class="card-body text-center text-white">
+                                <h4 class="card-title">Max Temperature</h4>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg col-md-6">
+                    <div class="card bg-light mb-3" style="max-width: 20rem;">
+                        <a href="humidity.html">
+                            <img class="card-img-top" src="Resources/assets/images/Lat_Humid.png" alt="Humidity Graph"
+                                style="width:100%">
+                            <div class="card-body text-center text-white">
+                                <h4 class="card-title">Humidity</h4>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg col-md-6">
+                    <div class="card bg-light mb-3" style="max-width: 20rem;">
+                        <a href="cloudiness.html">
+                            <img class="card-img-top" src="Resources/assets/images/Lat_Cloud.png" alt="Cloudiness Graph"
+                                style="width:100%">
+                            <div class="card-body text-center text-white">
+                                <h4 class="card-title">Cloudiness</h4>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg col-md-6">
+                    <div class="card bg-light mb-3" style="max-width: 20rem;">
+                        <a href="wind_speed.html">
+                            <img class="card-img-top" src="Resources/assets/images/Lat_Wind.png" alt="Wind Speed Graph"
+                                style="width:100%">
+                            <div class="card-body text-center text-white">
+                                <h4 class="card-title">Wind Speed</h4>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+</body>
+
+
+<!-- Footer -->
+<footer class="footer navbar-expand-lg navbar-dark text-center" >
+    <div class="footer-copyright">
+        <div class="top"> <span> Web Design &amp;  Data Visualization by Zen Acar</span>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+</html>
